@@ -4,39 +4,38 @@ html, body {
   background-color: #bad4ee;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
   align-items: center;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 20px;
 }
 
 
-
 h3 {
+  padding-top: 5vh;
   color: 	white;
   font-size: 3vw; 
+  text-align: center;
 }
 
 .pad {
   /*width: 800px;*/
   gap: 0px 10px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
   width: 300px;
   height: 170px;
-  margin: 0px 5px;
-  
-  display: flex;
+/*   spaces around each box */
+  margin: 0px 20px 20px 20px;
   justify-content: center;
   align-items: center;
-  
   color: rgba(255, 255, 255, 0.4);
-   user-select: none; 
+  user-select: none; 
   overflow: hidden;
  
   
@@ -45,6 +44,7 @@ h3 {
   border-radius: 15px;
   
 }
+
 .figure{
   width: 305px;
   height: 175px;
@@ -59,7 +59,6 @@ div.box:hover {
 
 div {
   margin: 30px;
-  padding: 0px;
   border-radius: 20px;
 }
 
@@ -92,7 +91,7 @@ section:last-child {
 div.mainbox {
   margin-top: 500px;
 }
-
-#main {
-  padding-top: 200px;
+div #main {
+  margin-top: 500px;
+  padding-top: 300px;
 }

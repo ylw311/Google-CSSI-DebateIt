@@ -6,11 +6,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom: 50px;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -23,6 +18,8 @@ body {
     left: 0;
     right: 0;
     transition: all .3s ease-in-out;
+/*   keeps boxes under nav when hovered */
+    z-index: 9999;
 }
 
 .nav .container {

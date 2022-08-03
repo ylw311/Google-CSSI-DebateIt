@@ -2,12 +2,12 @@
 	box-sizing:border-box;
 }
 body{
-	background-color:	#000000;
+	background-color:;
 	font-family:Arial;
 }
 #container{
 	
-	background:	#000000;
+	background:		#0E1525;
 	margin:0 auto;
 	font-size:0;
 	border-radius:5px;
@@ -16,7 +16,7 @@ body{
 aside{
 	width:260px;
 	height:800px;
-	background-color:#3b3e49;
+	background-color:#2B3245;
 	display:inline-block;
 	font-size:15px;
 	vertical-align:top;
@@ -37,17 +37,17 @@ aside input{
 	height:50px;
 	line-height:50px;
 	padding:0 50px 0 20px;
-	background-color:#5e616a;
+	background-color: #3C445C;
 	border:none;
 	border-radius:3px;
-	color:#fff;
+	color: #3C445C;
 	background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
 	background-repeat:no-repeat;
 	background-position:170px;
 	background-size:40px;
 }
 aside input::placeholder{
-	color:#fff;
+	color: #3C445C;
 }
 aside ul{
 	padding-left:0;
@@ -60,7 +60,7 @@ aside li{
 	padding:10px 0;
 }
 aside li:hover{
-	background-color:#5e616a;
+	background-color: #3C445C;
 }
 h2,h3{
 	margin:0;
@@ -141,8 +141,8 @@ main header h3{
 	list-style-type:none;
 	overflow-y:scroll;
 	height:535px;
-	border-top:2px solid #fff;
-	border-bottom:2px solid #fff;
+	border-top:2px solid  #3C445C;
+	border-bottom:2px solid  #3C445C;
 }
 #chat li{
 	padding:10px 30px;
@@ -153,14 +153,14 @@ main header h3{
 	font-weight:normal;
 }
 #chat h3{
-	color:#bbb;
+	color: #3C445C;
 }
 #chat .entete{
 	margin-bottom:5px;
 }
 #chat .message{
 	padding:20px;
-	color:#fff;
+	color: #3C445C;
 	line-height:25px;
 	max-width:90%;
 	display:inline-block;
@@ -204,10 +204,11 @@ main footer textarea{
 	border-radius:3px;
 	padding:20px;
 	font-size:13px;
-	margin-bottom:13px;
+
+ 
 }
 main footer textarea::placeholder{
-	color:#ddd;
+	color: #3C445C;
 }
 main footer img{
 	height:30px;
