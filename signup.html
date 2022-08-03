@@ -172,7 +172,14 @@
 
           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-          <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+          <button id="signInWithGoogle" class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16">
+              <use xlink:href="#google" />
+            </svg>
+            Sign up with Google
+          </button>
+
+<!--           <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16">
               <use xlink:href="#twitter" />
             </svg>
@@ -189,7 +196,7 @@
               <use href="#github" />
             </svg>
             Sign up with GitHub
-          </button>
+          </button> -->
           <!--           </form> -->
         </div>
       </div>
@@ -201,7 +208,6 @@
 
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -221,9 +227,9 @@
   // Import the functions you need from the SDKs you need
   import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
   import {getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
-  import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
+  import {getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  // https://firebase.google.com/docs/web/setup#available  -libraries
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
@@ -276,6 +282,35 @@
       });
 
   });
+
+
+  const provider = new GoogleAuthProvider(app);
+
+  signInWithGoogle.addEventListener('click', (e) => {
+
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+        alert(errorMessage);
+      });
+  });
+
+
 
 
 </script>
