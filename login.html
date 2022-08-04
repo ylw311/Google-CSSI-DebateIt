@@ -104,10 +104,17 @@
     </div>
     <button class="w-100 btn btn-lg btn-primary" id="login" type="submit">Sign in</button>
 
-    
 
     <hr class="my-4">
-    
+    <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+    <button id="signInWithGoogle" class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+      <svg class="bi me-1" width="16" height="16">
+        <use xlink:href="#google" />
+      </svg>
+      Sign up with Google
+    </button>
+    <hr class="my-4">
+
     <small>
       Don't have an account?
       <a class="text-muted" style="text-decoration: underline;" href="/signup.html">Sign Up</a>
@@ -133,7 +140,7 @@
   // Import the functions you need from the SDKs you need
   import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
   import {getDatabase, update, ref} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
-  import {getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
+  import {getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -162,13 +169,17 @@
         // Signed in 
         const user = userCredential.user;
 
-        // do something ie redirect to another page after user has been created
         const date = new Date();
         update(ref(database, 'users/' + user.uid), {
           last_login: date,
         })
-        // ...
+        
+        //TODO CHANGE: Welcome user by their username
         alert("Successfully Logged-in");
+
+       
+
+        location.href = 'index.html';
 
       })
       .catch((error) => {
@@ -178,6 +189,32 @@
         alert(errorMessage);
       });
 
+  });
+
+
+  const provider = new GoogleAuthProvider(app);
+  signInWithGoogle.addEventListener('click', (e) => {
+
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+
+        location.href = 'index.html';
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+        alert(errorMessage);
+      });
   });
 
   const user = auth.currentUser;

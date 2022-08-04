@@ -170,16 +170,16 @@
           <!-- end of term of use -->
 
 
-          <hr class="my-4">
+<!--           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
           <button id="signInWithGoogle" class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16">
               <use xlink:href="#google" />
             </svg>
             Sign up with Google
-          </button>
+          </button> -->
 
-<!--           <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+          <!--           <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16">
               <use xlink:href="#twitter" />
             </svg>
@@ -268,7 +268,11 @@
           username: username,
           email: email,
           // never save password to database
+
+
         })
+
+        location.href = 'index.html';
 
         //placehold alert
         alert('user has been created');
@@ -284,31 +288,7 @@
   });
 
 
-  const provider = new GoogleAuthProvider(app);
-
-  signInWithGoogle.addEventListener('click', (e) => {
-
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
-        
-        // ...
-      }).catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
-        alert(errorMessage);
-      });
-  });
+ 
 
 
 
