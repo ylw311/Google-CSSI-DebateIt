@@ -1,10 +1,18 @@
 # CSSI-DebateIt
+
+[https://debateit.ylw311.repl.co](https://debateit.ylw311.repl.co)
+
+<br/>
+
 Final project for CSSI program (MVP/prototype idea)
 - A website for debating certain posted topics by owner 
 - Customized for university/college students
 - Has features such as user login, post replies and customized pictures
 - Created using bootstrap, google firebase, HTML/CSS and JavaScript
 - Worked in group of 3
+ <br/>
+
+
 
 <br/><br/>
 ## What each member worked on:
