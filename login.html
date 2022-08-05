@@ -13,6 +13,7 @@
 
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -134,13 +135,16 @@
 
 </body>
 
+  
 
 <!--   firebase -->
 <script type="module">
   // Import the functions you need from the SDKs you need
   import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
-  import {getDatabase, update, ref} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+  import {getDatabase, update, ref, onValue} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
   import {getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
+
+
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -159,6 +163,7 @@
   const database = getDatabase(app);
   const auth = getAuth();
 
+
   login.addEventListener('click', (e) => {
 
     var email = document.getElementById(`floatingInput`).value;
@@ -173,11 +178,10 @@
         update(ref(database, 'users/' + user.uid), {
           last_login: date,
         })
-        
-        //TODO CHANGE: Welcome user by their username
+
         alert("Successfully Logged-in");
 
-       
+        //TODO: GREET USER UPON LOGIN WITH USERNAME
 
         location.href = 'index.html';
 
