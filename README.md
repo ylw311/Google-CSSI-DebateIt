@@ -27,8 +27,6 @@ Final project for CSSI program (MVP/prototype idea)
     - store time when user last logged-in
 - interface design for home page, login page, and sign up page
   - ensuring nav bar and debate room tiles respond accordingly to browser size changes
-- version control
--  project management, ensuring team on progress
 
 ### Sharleen
 - home page debate topic tiles 
@@ -38,15 +36,8 @@ Final project for CSSI program (MVP/prototype idea)
   - which were designed to facilitate discusion and could display what users were active or not
   - debate rooms featured video icons similar to google meet format
 - interface design for home page and individual debate rooms of each category
--  -used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
--  version control
--  product management from ideation to completion of the project
+- used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
  
-
-
-
- 
-
 
 ### Priyanshi
 - Nav bar version 1
