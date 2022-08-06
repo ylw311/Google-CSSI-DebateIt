@@ -28,7 +28,7 @@ Final project for CSSI program (MVP/prototype idea)
 - interface design for home page, login page, and sign up page
   - ensuring nav bar and debate room tiles respond accordingly to browser size changes
 - version control
-- project management, ensuring team on progress
+-  project management, ensuring team on progress
 
 ### Sharleen
 - home page debate topic tiles 
