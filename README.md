@@ -39,16 +39,14 @@ Final project for CSSI program (MVP/prototype idea)
   -debate rooms featured video icons similar to google meet format
 - interface design for home page and individual debate rooms of each category
 -  -used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
--  teamwork
+-  version control
 -  product management from ideation to completion of the project
- -version control
+ 
 
 
 
  
 
-teamwork
-product management from ideation to completion of the project
 
 ### Priyanshi
 - Nav bar version 1
