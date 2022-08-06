@@ -36,7 +36,7 @@ Final project for CSSI program (MVP/prototype idea)
   - chose topics that would be of interest to target audience(college students , computer science students)
 - individual debate rooms 
   - which were designed to facilitate discusion and could display what users were active or not
-  -debate rooms featured video icons similar to google meet format
+  - debate rooms featured video icons similar to google meet format
 - interface design for home page and individual debate rooms of each category
 -  -used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
 -  version control
