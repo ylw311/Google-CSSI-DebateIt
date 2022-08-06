@@ -33,8 +33,15 @@ Final project for CSSI program (MVP/prototype idea)
 ### Sharleen
 - home page debate topic tiles 
   - include thumnail pictures found from online
+  - chose topics that would be of interest to target audience(college students , computer science students)
 - individual debate rooms 
+  - which were designed to facilitate discusion and could display what users were active or not
+  -debate rooms featured video icons similar to google meet format
 - interface design for home page and individual debate rooms of each category
+  -used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
+-version control
+-teamwork
+-product management from ideation to completion of the project
 
 ### Priyanshi
 - Nav bar version 1
@@ -46,3 +53,4 @@ Final project for CSSI program (MVP/prototype idea)
 - add sign out button/link - backup functionality currectly commented out
 - Cleaner UI/UX design
 - add API to translate speech to text to make replying posts more accessible
+- conduct user research
