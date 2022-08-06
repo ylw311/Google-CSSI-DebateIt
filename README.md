@@ -40,6 +40,9 @@ Final project for CSSI program (MVP/prototype idea)
 - interface design for home page and individual debate rooms of each category
   -used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
 -version control
+ version control
+-  project management, ensuring team on progress
+
 -teamwork
 -product management from ideation to completion of the project
 
