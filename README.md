@@ -30,7 +30,8 @@ Final project for CSSI program (MVP/prototype idea)
 
 ### Sharleen
 - home page debate topic tiles 
-  - include thumnail pictures found from online
+  - created with css - flexbox
+  - designed for interactivity 
   - chose topics that would be of interest to target audience(college students , computer science students)
 - individual debate rooms 
   - which were designed to facilitate discusion and could display what users were active or not
