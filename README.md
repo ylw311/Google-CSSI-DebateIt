@@ -40,7 +40,7 @@ Final project for CSSI program (MVP/prototype idea)
 - used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
  
 
-### Priyanshi
+### Priyanshi Ramani
 - Nav bar version 1
 
 <br/><br/>
