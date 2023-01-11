@@ -28,7 +28,7 @@ Final project for CSSI program (MVP/prototype idea)
 - interface design for home page, login page, and sign up page
   - ensuring nav bar and debate room tiles respond accordingly to browser size changes
 
-### Sharleen
+### Sharleen & Priyanshi
 - home page debate topic tiles 
   - created with css - flexbox
   - designed for interactivity 
@@ -36,12 +36,12 @@ Final project for CSSI program (MVP/prototype idea)
 - individual debate rooms 
   - which were designed to facilitate discusion and could display what users were active or not
   - debate rooms featured video icons similar to google meet format
+- Nav bar version 1 
+  - later improvised for better aesthetics for website
 - interface design for home page and individual debate rooms of each category
 - used HTML and CSS to make the website aesthetic while maintaining the integrity of the teams vision
- 
-
-### Priyanshi Ramani
-- Nav bar version 1
+- optimized and integrated proper UI/UX to match goals
+- communicated and collaborated with team members to ideate and create website
 
 <br/><br/>
 ## Next Steps:
