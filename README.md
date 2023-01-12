@@ -18,7 +18,7 @@ Final project for CSSI program (MVP/prototype idea)
 ## What each member worked on:
 
 ### Linda
-- Nav bar version 2 (currently in use)
+- Nav bar version 2 
 - Firebase 
   - authentication
     - allow third party athentication (google) for login
